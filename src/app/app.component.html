@@ -1,8 +1,17 @@
+<div style="padding: 1rem">
+  <button style="color: white; background-color: #5091cd; font-size: 1rem" (click)="click()">Click Me</button>
+</div>
+<hr />
 <div>
-  <div style="padding: 1rem">
-    <button style="color: white; background-color: #5091cd; font-size: 1rem" (click)="click()">Click Me</button>
-  </div>
+  <h2>:leave Fade</h2>
   <div *ngIf="show" style="background-color: rgb(078, 042, 132); padding: 2rem" @leaveFade>
+    <div style="text-align: center;color: #ffffff; font-size: 2rem;">Hello!</div>
+  </div>
+</div>
+<hr />
+<div>
+  <h2>State Fade</h2>
+  <div style="background-color: rgb(078, 042, 132); padding: 2rem;" [@stateFade]="show ? 'show' : 'hide'">
     <div style="text-align: center;color: #ffffff; font-size: 2rem;">Hello!</div>
   </div>
 </div>
